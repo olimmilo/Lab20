@@ -85,8 +85,11 @@ def convert(iteration,datalen,interval):
 	funclist.append(float(functrial[i]))
 	i += interval
     return(funclist)
+
+rawtrials=[]
     
 i=0
 while i < 6:
-    
+    it=i+1
+    rawtrials.append(convert(it,DATALEN,INTERVALS[i]))
     1 += 1
