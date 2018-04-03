@@ -103,7 +103,7 @@ while i < len(rawtrials):
     i += 1
 
 n=0
-while n < len(smoothtrials)
+while n < len(smoothtrials):
     if smoothtrials[n] == rawtrials[n]:
         print("yes")
     else:
