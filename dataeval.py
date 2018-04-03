@@ -108,3 +108,9 @@ while i < len(rawtrials):
     i += 1
 
 ##preforms calculations
+calctable=[]
+
+i=0
+while i < len(smoothtrials):
+    calctable.append(calculations(smoothtrials[i]))
+    i += 1
