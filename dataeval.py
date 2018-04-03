@@ -15,7 +15,7 @@ CALCON=1
 DATALEN=175
 INTERVALS=[1,1,1,1,2,2]
 
-ROWLABEL=["Minimum Temperature","Maximum Temperature","Change in Temperature","Enthalpy"]
+ROWLABELS=["Minimum Temperature","Maximum Temperature","Change in Temperature","Enthalpy"]
 COLLUMNLABELS=["","Nickel Chloride","Sodium Nitrate","Aluminium Nitrate"]
 
 ##defines functions
@@ -144,11 +144,8 @@ i=0
 while i < len(smoothtrials):
     calctable.append(calculations(smoothtrials[i],i))
     i += 1
-
 i=0
-while i < len(calctable):
-    print(calctable[i])
-    i += 1
+
     
 fintable=[]
 
@@ -156,9 +153,12 @@ i=0
 while i < len(calctable):
     fintable.append(finish(calctable[i],calctable[i+1]))
     i += 2
+i=0
+
+OutputTable=[COLLUMNLABELS]
 
 i=0
-print("")
 while i < len(fintable):
-    print(fintable[i])
+    fintable[i].insert(0,ROWLABELS[i])
+    OutputTable.append(fintable[i])
     i += 1
