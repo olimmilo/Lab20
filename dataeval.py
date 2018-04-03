@@ -15,6 +15,9 @@ CALCON=1
 DATALEN=175
 INTERVALS=[1,1,1,1,2,2]
 
+ROWLABEL=[]
+COLLUMNLABELS=["","Nickel Chloride",]
+
 ##defines functions
 
 def smooth(list,degree=6):
