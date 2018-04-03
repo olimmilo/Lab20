@@ -82,7 +82,7 @@ def convert(iteration):
     funclist=[]
     for row in funct:
         ls=row
-        funclist.append(float(ls[1]))
+        funclist.append(float(ls[0]))
     functrial.close()
     return(funclist)
 
