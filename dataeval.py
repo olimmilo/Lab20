@@ -64,15 +64,15 @@ def LinReg(list,start,interval):
     return(ans)
 
 
-def LineInt(LINEONE, LINETWO):
-	x1=0
-	x2=0
-	y1=LINEONE[1]
-	y2=LINETWO[1]
-	m1=LINEONE[0]
-	m2=LINETWO[0]
-	COOR=[((((m1*((m2*(x1-x2))+y2))-(y1*m2))/(m1-m2))-y1+(m1*x1))/m1,(((m1*((m2*(x1-x2))+y2))-(y1*m2))/(m1-m2))]
-	return(COOR[1])
+def LineInt(lin1, lin2):
+	m=lin1[0]
+	b=lin1[1]
+	n=lin2[0]
+	c=lin2[1]
+	y=((n*b)-(m*c))/(n-m)
+	x=
+	intersect=[x,y]
+	return(intersect)
 
 
 def convert(iteration,datalen,interval):
