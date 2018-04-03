@@ -136,3 +136,6 @@ while i < len(smoothtrials):
     i += 1
 
 i=0
+while i < len(calctable):
+    print(calctable[i])
+    i += 1
