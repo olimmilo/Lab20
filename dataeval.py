@@ -93,3 +93,5 @@ while i < 6:
     it = i + 1
     rawtrials.append(convert(it,DATALEN,INTERVALS[i]))
     i += 1
+    
+print(rawtrials)
