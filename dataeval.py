@@ -53,7 +53,7 @@ def mean(list):
 def LinReg(list,start,interval):
     y=list
     x=[]
-    while len(x) <= len(y):
+    while len(x) < len(y):
         x.append((len(x)*interval)+start)
     xy=[n*m for n,m in zip(x,y)]
     print(x,y)
