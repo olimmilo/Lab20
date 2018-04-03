@@ -70,7 +70,10 @@ def LineInt(lin1, lin2):
 	n=lin2[0]
 	c=lin2[1]
 	y=((n*b)-(m*c))/(n-m)
-	x=
+	x=(y-c)/n
+	x1=(y-b)/m
+	if x == x1:
+	    print("good")
 	intersect=[x,y]
 	return(intersect)
 
