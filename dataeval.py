@@ -11,9 +11,10 @@ SALTMASS=[4.975,4.144,4.703,4.545,4.835,4.540]
 DATALEN=175
 INTERVALS=[1,1,1,1,2,2]
 
-"""
-def smooth(list,degree=6):
 
+def smooth(list,degree=6):
+    return(list)
+"""
     window=degree*2-1
 
     weight=numpy.array([1.0]*window)
@@ -93,5 +94,13 @@ while i < 6:
     it = i + 1
     rawtrials.append(convert(it,DATALEN,INTERVALS[i]))
     i += 1
-    
+
+smoothtrials=[]
+
+i=0
+while i < len(rawtrials):
+    smooth(
+    i += 1
+
+
 print(rawtrials)
