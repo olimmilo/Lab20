@@ -158,6 +158,7 @@ while i < len(calctable):
     i += 2
 
 i=0
+print("")
 while i < len(fintable):
     print(fintable[i])
     i += 1
