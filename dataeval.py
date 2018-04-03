@@ -136,4 +136,3 @@ while i < len(smoothtrials):
     i += 1
 
 i=0
-while 
