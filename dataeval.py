@@ -1,5 +1,5 @@
-import csv
-import numpy
+##import csv
+##import numpy
 
 """
 Experiment vars which could be input but are just written into the code are defined at the top in all caps
@@ -10,7 +10,7 @@ WATERMASS=[155.190,143.052,155.715,137.885,80.971,144.443]
 SALTMASS=[4.975,4.144,4.703,4.545,4.835,4.540]
 DATALEN=175
 
-
+"""
 def smooth(list,degree=6):
 
     window=degree*2-1
@@ -32,7 +32,7 @@ def smooth(list,degree=6):
         smoothed[i]=sum(numpy.array(list[i:i+window])*weight)/sum(weight)
 
     return(smoothed)
-
+"""
 
 def sum(list):
     i = 0
