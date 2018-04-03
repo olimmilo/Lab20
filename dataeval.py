@@ -122,3 +122,5 @@ i=0
 while i < len(smoothtrials):
     calctable.append(calculations(smoothtrials[i]))
     i += 1
+
+print(calctable)
