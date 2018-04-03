@@ -95,7 +95,10 @@ def convert(iteration,datalen,interval):
 
 def enthalpychange(minl,maxl,iteration):
     m=WATERMASS[iteration]+SALTMASS[iteration]
-    return(minl)
+    s=SHEATWATER
+    t=maxl-minl
+    q=m*s*t
+    return(q)
 
 
 def calculations(list,iteration):
