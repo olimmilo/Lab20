@@ -99,7 +99,7 @@ smoothtrials=[]
 
 i=0
 while i < len(rawtrials):
-    smoothtrials.append(mooth(rawtrials[i]))
+    smoothtrials.append(smooth(rawtrials[i]))
     i += 1
 
 n=0
