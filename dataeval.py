@@ -59,7 +59,7 @@ def LinReg(list,start,interval):
     x2=[j**2 for j in x]
     n=len(list)
     m=((n*sum(xy))-(sum(x)*sum(y)))/((n*sum(x2))-(sum(x)**2))
-    b=((sum(y)*sum(x2))-(sum(x)*sum(xy))/((n*sum(x2))-(sum(x)**2))
+    b=((sum(y)*sum(x2))-(sum(x)*sum(xy)))/((n*sum(x2))-(sum(x)**2))
     ans=[m,b]
     return(ans)
 
