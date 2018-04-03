@@ -54,8 +54,9 @@ def LinReg(list,start,interval):
     y=list
     x=[]
     while len(x) <= len(y):
-        x.append((len(y)*interval)+start)
+        x.append((len(x)*interval)+start)
     xy=[n*m for n,m in zip(x,y)]
+    print(x,y)
     x2=[j**2 for j in x]
     n=len(list)
     m=((n*sum(xy))-(sum(x)*sum(y)))/((n*sum(x2))-(sum(x)**2))
@@ -87,9 +88,9 @@ def convert(iteration,datalen,interval):
     
 testlis1=[0,1,2,3,4]
 testlis2=[4,3,2,1,0]
-test1=LinReg(testlis1,0)
-test2=LinReg(testlis2, 0)
-testend=LineInt(test1,test2)
+test1=LinReg(testlis1,0,1)
+test2=LinReg(testlis2, 0,1)
+#testend=LineInt(test1,test2)
 print(test1)
 print(test2)
-print(testend)
+#print(testend)
