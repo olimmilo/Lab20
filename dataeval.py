@@ -71,9 +71,6 @@ def LineInt(lin1, lin2):
 	c=lin2[1]
 	y=((n*b)-(m*c))/(n-m)
 	x=(y-c)/n
-	x1=(y-b)/m
-	if x == x1:
-	    print("good")
 	intersect=[x,y]
 	return(intersect)
 
@@ -92,7 +89,7 @@ testlis1=[0,1,2,3,4,5]
 testlis2=[5,4,3,2,1,0]
 test1=LinReg(testlis1,0,1)
 test2=LinReg(testlis2, 0,1)
-#testend=LineInt(test1,test2)
+testend=LineInt(test1,test2)
 print(test1)
 print(test2)
-#print(testend)
+print(testend)
