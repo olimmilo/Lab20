@@ -6,11 +6,14 @@ Experiment vars which could be input but are just written into the code are defi
 
 smoothing function was provided in the scipy numpy handbook and is not my own work
 """
+
+##Experiment vars
 WATERMASS=[155.190,143.052,155.715,137.885,80.971,144.443]
 SALTMASS=[4.975,4.144,4.703,4.545,4.835,4.540]
 DATALEN=175
 INTERVALS=[1,1,1,1,2,2]
 
+##defines functions
 
 def smooth(list,degree=6):
     return(list)
@@ -87,6 +90,8 @@ def convert(iteration,datalen,interval):
 	i += interval
     return(funclist)
 
+##creates smoothed data sets
+
 rawtrials=[]
     
 i=0
@@ -102,3 +107,4 @@ while i < len(rawtrials):
     smoothtrials.append(smooth(rawtrials[i]))
     i += 1
 
+##preforms calculations
