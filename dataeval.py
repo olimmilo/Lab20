@@ -6,12 +6,12 @@ Experiment vars which could be input but are just written into the code are defi
 
 smoothing function was provided in the scipy numpy handbook and is not my own work
 """
-WATERMASS=[]
-SALTMASS=[]
-DATALEN=150
+WATERMASS=[155.190,143.052,155.715,137.885,80.971,144.443]
+SALTMASS=[4.975,4.144,4.703,4.545,4.835,4.540]
+DATALEN=175
 
 
-def smooth(list,degree=3):
+def smooth(list,degree=6):
 
     window=degree*2-1
 
@@ -75,13 +75,12 @@ def LineInt(LINEONE, LINETWO):
 	return(COOR[1])
 
 
-def convert(iteration):
-    name="trial"+str(iteration)+".csv"
-    functrial=open(name)
-    funct=csv.reader(functrial)
+def convert(iteration,datalen,interval):
+    name="trial"+str(iteration)+".txt"
+    functrial=open(name).readlines()
     funclist=[]
-    for row in funct:
-        ls=row
-        funclist.append(float(ls[0]))
-    functrial.close()
+    i=0
+    while len(funclist) < datalen:
+	funclist.append(float(functrial[i]))
+	i += interval
     return(funclist)
