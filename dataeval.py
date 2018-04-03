@@ -162,3 +162,5 @@ while i < len(fintable):
     fintable[i].insert(0,ROWLABELS[i])
     OutputTable.append(fintable[i])
     i += 1
+
+print(OutputTable)
