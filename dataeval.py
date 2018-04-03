@@ -113,9 +113,12 @@ def calculations(list,iteration):
     return(calcs)
 
 
-
 def finish(l1,l2):
-    
+    endlist=[]
+    i=0
+    while i < len(l1)
+        endlist.append(mean([l1[i],l2[1]]))
+    return(endlist)
 ##creates smoothed data sets
 
 rawtrials=[]
