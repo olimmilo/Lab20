@@ -16,7 +16,7 @@ DATALEN=175
 INTERVALS=[1,1,1,1,2,2]
 
 ROWLABEL=[]
-COLLUMNLABELS=["","Nickel Chloride",]
+COLLUMNLABELS=["","Nickel Chloride","Sodium Nitrate","Aluminium Nitrate"]
 
 ##defines functions
 
@@ -142,3 +142,7 @@ i=0
 while i < len(calctable):
     print(calctable[i])
     i += 1
+    
+fintable=[]
+
+i=0
