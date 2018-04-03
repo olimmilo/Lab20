@@ -90,6 +90,14 @@ def convert(iteration,datalen,interval):
 	i += interval
     return(funclist)
 
+
+def calculations(list):
+    minl=min(list)
+    maxl=max(list)
+    deltal=maxl-minl
+    calcs=[minl,maxl,deltal]
+    return(calcs)
+
 ##creates smoothed data sets
 
 rawtrials=[]
