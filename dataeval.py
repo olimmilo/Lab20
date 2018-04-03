@@ -9,6 +9,7 @@ smoothing function was provided in the scipy numpy handbook and is not my own wo
 WATERMASS=[155.190,143.052,155.715,137.885,80.971,144.443]
 SALTMASS=[4.975,4.144,4.703,4.545,4.835,4.540]
 DATALEN=175
+INTERVALS=[1,1,1,1,2,2]
 
 """
 def smooth(list,degree=6):
@@ -85,11 +86,7 @@ def convert(iteration,datalen,interval):
 	i += interval
     return(funclist)
     
-testlis1=[0,1,2,3,4,5]
-testlis2=[5,4,3,2,1,0]
-test1=LinReg(testlis1,0,1)
-test2=LinReg(testlis2, 0,1)
-testend=LineInt(test1,test2)
-print(test1)
-print(test2)
-print(testend)
+i=0
+while i < 6:
+    
+    1 += 1
