@@ -15,7 +15,7 @@ CALCON=1
 DATALEN=175
 INTERVALS=[1,1,1,1,2,2]
 
-ROWLABEL=[]
+ROWLABEL=["Minimum Temperature","Maximum Temperature","Change in Temperature","Enthalpy"]
 COLLUMNLABELS=["","Nickel Chloride","Sodium Nitrate","Aluminium Nitrate"]
 
 ##defines functions
@@ -113,6 +113,9 @@ def calculations(list,iteration):
     return(calcs)
 
 
+
+def finish(l1,l2):
+    
 ##creates smoothed data sets
 
 rawtrials=[]
@@ -146,3 +149,11 @@ while i < len(calctable):
 fintable=[]
 
 i=0
+while i < len(calctable):
+    fintable.append(finish(calctable[i],calctable[i+1]))
+    i += 2
+
+i=0
+while i < len(fintable):
+    print(fintable[i])
+    i += 1
