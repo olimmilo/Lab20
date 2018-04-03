@@ -93,12 +93,19 @@ def convert(iteration,datalen,interval):
     return(funclist)
 
 
-def calculations(list):
+def enthalpychange(minl,maxl,iteration):
+    m=WATERMASS[iteration]+SALTMASS[iteration]
+    return(minl)
+
+
+def calculations(list,iteration):
     minl=min(list)
     maxl=max(list)
     deltal=maxl-minl
-    calcs=[minl,maxl,deltal]
+    enthalpy=enthalpychange(minl,maxl,iteration)
+    calcs=[minl,maxl,deltal,enthalpy]
     return(calcs)
+
 
 ##creates smoothed data sets
 
@@ -122,7 +129,8 @@ calctable=[]
 
 i=0
 while i < len(smoothtrials):
-    calctable.append(calculations(smoothtrials[i]))
+    calctable.append(calculations(smoothtrials[i],i))
     i += 1
 
-print(calctable)
+i=0
+while 
