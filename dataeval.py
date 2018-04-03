@@ -102,10 +102,3 @@ while i < len(rawtrials):
     smoothtrials.append(smooth(rawtrials[i]))
     i += 1
 
-n=0
-while n < len(smoothtrials):
-    if smoothtrials[n] == rawtrials[n]:
-        print("yes")
-    else:
-        print("no")
-    n += 1
