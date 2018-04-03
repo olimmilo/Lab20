@@ -85,8 +85,8 @@ def convert(iteration,datalen,interval):
 	i += interval
     return(funclist)
     
-testlis1=[0,1,2,3,4]
-testlis2=[4,3,2,1,0]
+testlis1=[0,1,2,3,4,5]
+testlis2=[5,4,3,2,1,0]
 test1=LinReg(testlis1,0,1)
 test2=LinReg(testlis2, 0,1)
 #testend=LineInt(test1,test2)
