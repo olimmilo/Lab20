@@ -87,8 +87,8 @@ def convert(iteration,datalen,interval):
     
 testlis1=[0,1,2,3,4]
 testlis2=[4,3,2,1,0]
-test1=LinReg(testlis1,5,1)
-test2=LinReg(testlis2, 5,1)
+test1=LinReg(testlis1,0,1)
+test2=LinReg(testlis2, 0,1)
 #testend=LineInt(test1,test2)
 print(test1)
 print(test2)
