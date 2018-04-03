@@ -146,18 +146,31 @@ def SetDivide(list):
 
 
 def CalCalc(list,breakpts,iteration):
-    lin0lis=[i for i in list < breakpts[0]]
-    lin0=LinReg(lin0lis)
-    lin1lis=[i for i in list >= breakpts[2]]
+    lin0lis=[]
+    lin1lis=[]
+    lin2lis=[]
+    i=0
+    while i < breakpts[0]:
+        lin0lis.append(list[i])
+        i += 1
+    i=breakpts[0]
+    while i < breakpts[1]:
+        lin1lis.append(list[i])
+        i += 1
+    i=breakpts[2]
+    while i < breakpts[3]:
+        lin2lis.append(list[i])
+        i += 1
     lin1=LinReg(lin1lis)
-    peak=LineInt(lin0,lin1)
-    deltat=abs(mean(lin0)-peak)
+    lin2=LinReg(lin2lis)
+    peak=LineInt(lin1,lin2)
+    deltat=abs(mean(lin0lis)-peak)
     deltathot=abs(HOTWATERTEMP[iteration]-peak)
-    deltatcold=abs(mean(lin0)-peak)
+    deltatcold=abs(mean(lin0lis)-peak)
     deltaqhot=HOTWATERMASS[iteration] * 4.179 * deltathot
     deltaqcold=COLDWATERMASS[iteration] * 4.179 * deltatcold
     calcon=(deltaqhot-deltaqcold)/deltat
-    return(calcon)
+    return([mean(lin0lis),peak,calcon])
 
 
 ##work
