@@ -50,11 +50,11 @@ def mean(list):
     return(mean)
 
 
-def LinReg(list,x0):
+def LinReg(list,start,interval):
     y=list
     x=[]
-    while len(x) <= len(y)+x0:
-        x.append(len(x)+x0)
+    while len(x) <= len(y):
+        x.append((len(y)*interval)+start)
     xy=[n*m for n,m in zip(x,y)]
     x2=[j**2 for j in x]
     n=len(list)
@@ -84,3 +84,12 @@ def convert(iteration,datalen,interval):
 	funclist.append(float(functrial[i]))
 	i += interval
     return(funclist)
+    
+testlis1=[0,1,2,3,4]
+testlis2=[4,3,2,1,0]
+test1=LinReg(testlis1,0)
+test2=LinReg(testlis2, 0)
+testend=LineInt(test1,test2)
+print(test1)
+print(test2)
+print(testend)
