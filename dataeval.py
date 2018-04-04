@@ -163,7 +163,7 @@ while i < len(fintable):
     OutputTable.append(fintable[i])
     i += 1
 
-printfile = open('output.csv', 'w')
+printfile = open('output.csv', 'w',newline='')
 with printfile:
     writer = csv.writer(printfile)
     writer.writerows(fintable)
