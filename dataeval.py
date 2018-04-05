@@ -153,12 +153,12 @@ i=0
 while i < 4:
     fintable.append(finish(i,calctable))
     i += 1
-"""
+
 i=0
 i=0
 
 with open('output.csv','w') as printfile:
     writer = csv.writer(printfile)
     writer.writerows(fintable)
-"""
+
 print(fintable)
