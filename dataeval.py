@@ -167,4 +167,4 @@ with open('output.csv','w') as printfile:
     writer = csv.writer(printfile)
     writer.writerows(fintable)
 """
-print(fintable)
+print(OutputTable)
