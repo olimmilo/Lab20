@@ -152,7 +152,7 @@ fintable=[]
 i=0
 while i < len(calctable):
     fintable.append(finish(i,calctable[i]))
-    i += 2
+    i += 1
 i=0
 
 OutputTable=[COLLUMNLABELS]
