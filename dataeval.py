@@ -114,7 +114,16 @@ def calculations(list,iteration):
 
 
 def finish(m,table):
-    
+    avglist=[]
+    i=0
+    while i < len(table):
+        avglist.append(mean([table[i][m],table[i+1][m]])
+        i += 2
+    endlist=[ROWLABELS[m]]
+    i=0
+    while i < (len(table)/2)+1:
+        endlist.append(avglist[i])
+        i += 1
     return(endlist)
 ##creates smoothed data sets
 
@@ -146,7 +155,7 @@ i=0
 fintable=[]
 
 i=0
-while i < len(calctable)/2:
+while i < len(calctable[0]):
     fintable.append(finish(i,calctable))
     i += 1
 i=0
