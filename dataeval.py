@@ -113,11 +113,11 @@ def calculations(list,iteration):
     return(calcs)
 
 
-def finish(table,iteration):
-    endlist=[ROWLABELS[iteration]]
+def finish(table,itr):
+    endlist=[ROWLABELS[itr]]
     i=0
     while i < len(l1):
-        endlist.append(mean(table[iteration][i]))
+        endlist.append(mean(table[itr][i]))
         i += 1
     return(endlist)
 ##creates smoothed data sets
