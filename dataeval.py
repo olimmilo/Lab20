@@ -151,7 +151,7 @@ fintable=[]
 
 i=0
 while i < len(calctable):
-    fintable.append(finish(i,calctable[i]))
+    fintable.append(finish(i,calctable))
     i += 1
 i=0
 
