@@ -113,7 +113,7 @@ def calculations(list,iteration):
     return(calcs)
 
 
-def finish(table,itr):
+def finish(itr,table):
     endlist=[ROWLABELS[itr]]
     i=0
     while i < len(l1):
@@ -159,7 +159,7 @@ OutputTable=[COLLUMNLABELS]
 
 i=0
 while i < len(fintable):
-    OutputTable.append(fintable,i)
+    OutputTable.append(i,fintable)
     i += 1
 i=0
 """
