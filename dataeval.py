@@ -117,7 +117,7 @@ def finish(l1,l2):
     endlist=[]
     i=0
     while i < len(l1):
-        endlist.append(mean([l1[i],l2[1]]))
+        endlist.append(mean([l1[i],l2[i]]))
         i += 1
     return(endlist)
 ##creates smoothed data sets
@@ -162,7 +162,7 @@ while i < len(fintable):
     fintable[i].insert(0,ROWLABELS[i])
     OutputTable.append(fintable[i])
     i += 1
-
+i=0
 with open('output.csv','w') as printfile:
     writer = csv.writer(printfile)
     writer.writerows(fintable)
