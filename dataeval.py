@@ -114,7 +114,8 @@ def calculations(list,iteration):
 
 
 def finish(itr,table):
-    endlist=[ROWLABELS[itr]]
+    itreal=itr/2
+    endlist=[ROWLABELS[itreal]]
     i=0
     while i < len(table):
         endlist.append(mean([table[i][itr],table[i+1][itr]]))
@@ -143,7 +144,7 @@ calctable=[]
 i=0
 while i < len(smoothtrials):
     calctable.append(calculations(smoothtrials[i],i))
-    i += 1
+    i += 2
 i=0
 
     
