@@ -22,7 +22,7 @@ COLLUMNLABELS=["___","Nickel Chloride","Sodium Nitrate","Aluminium Nitrate"]
 
 def smooth(list,degree=6):
     return(list)
-"""
+
     window=degree*2-1
 
     weight=numpy.array([1.0]*window)
@@ -42,7 +42,7 @@ def smooth(list,degree=6):
         smoothed[i]=sum(numpy.array(list[i:i+window])*weight)/sum(weight)
 
     return(smoothed)
-"""
+
 
 def sum(list):
     i = 0
