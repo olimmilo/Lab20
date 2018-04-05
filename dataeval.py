@@ -1,5 +1,5 @@
 import csv
-##import numpy
+import numpy
 
 """
 Experiment vars which could be input but are just written into the code are defined at the top in all caps
