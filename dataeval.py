@@ -151,20 +151,17 @@ fintable=[]
 
 i=0
 while i < len(calctable):
-    fintable.append(finish(calctable[i],calctable[i+1]))
+    fintable.append(finish(i,calctable[i]))
     i += 2
 i=0
 
 OutputTable=[COLLUMNLABELS]
 
 i=0
-while i < len(fintable):
-    OutputTable.append(i,fintable)
-    i += 1
 i=0
 """
 with open('output.csv','w') as printfile:
     writer = csv.writer(printfile)
     writer.writerows(fintable)
 """
-print(OutputTable)
+print(fintable,OutputTable)
