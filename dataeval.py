@@ -11,7 +11,7 @@ smoothing function was provided in the scipy numpy handbook and is not my own wo
 WATERMASS=[155.190,143.052,155.715,137.885,80.971,144.443]
 SALTMASS=[4.975,4.144,4.703,4.545,4.835,4.540]
 SHEATWATER=4.186
-CALCON=1
+CALCON=16.2
 DATALEN=175
 INTERVALS=[1,1,1,1,2,2]
 
