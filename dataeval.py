@@ -114,17 +114,12 @@ def calculations(list,iteration):
 
 
 def finish(m,table):
-    avglist=[]
+    avglist=[ROWLABELS[m]]
     i=0
     while i < len(table):
         avglist.append(mean([table[i][m],table[i+1][m]]))
         i += 2
-    endlist=[ROWLABELS[m]]
-    i=0
-    while i < (len(table)/2)+1:
-        endlist.append(avglist[i])
-        i += 1
-    return(endlist)
+    return(avglist)
 ##creates smoothed data sets
 
 rawtrials=[]
