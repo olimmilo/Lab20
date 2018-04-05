@@ -100,7 +100,7 @@ def enthalpychange(minl,maxl,iteration):
     m=WATERMASS[iteration]+SALTMASS[iteration]
     s=SHEATWATER
     t=maxl-minl
-    q=m*s*t
+    q=(m*s*t)+CALCON
     return(q)
 
 
