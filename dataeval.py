@@ -145,7 +145,7 @@ while i < len(smoothtrials):
     calctable.append(calculations(smoothtrials[i],i))
     i += 2
 i=0
-
+"""
     
 fintable=[COLLUMNLABELS]
 
@@ -153,15 +153,12 @@ i=0
 while i < 4:
     fintable.append(finish(i,calctable))
     i += 1
-i=0
-
-OutputTable=[COLLUMNLABELS]
 
 i=0
 i=0
-"""
+
 with open('output.csv','w') as printfile:
     writer = csv.writer(printfile)
     writer.writerows(fintable)
 """
-print(fintable,OutputTable)
+print(calctable)
