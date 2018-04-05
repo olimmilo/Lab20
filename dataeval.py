@@ -16,7 +16,7 @@ DATALEN=175
 INTERVALS=[1,1,1,1,2,2]
 
 ROWLABELS=["Minimum Temperature","Maximum Temperature","Change in Temperature","Enthalpy"]
-COLLUMNLABELS=["___","Nickel Chloride","Sodium Nitrate","Aluminium Nitrate"]
+COLLUMNLABELS=["","Nickel Chloride","Sodium Nitrate","Aluminium Nitrate"]
 
 ##defines functions
 
