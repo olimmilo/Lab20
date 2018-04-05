@@ -116,7 +116,7 @@ def calculations(list,iteration):
 def finish(itr,table):
     endlist=[ROWLABELS[itr]]
     i=0
-    while i < len(l1):
+    while i < len(table):
         endlist.append(mean(table[itr][i]))
         i += 1
     return(endlist)
