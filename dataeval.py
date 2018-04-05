@@ -117,7 +117,7 @@ def finish(m,table):
     avglist=[]
     i=0
     while i < len(table):
-        avglist.append(mean([table[i][m],table[i+1][m]])
+        avglist.append(mean([table[i][m],table[i+1][m]]))
         i += 2
     endlist=[ROWLABELS[m]]
     i=0
