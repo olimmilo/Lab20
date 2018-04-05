@@ -161,4 +161,4 @@ with open('output.csv','w') as printfile:
     writer = csv.writer(printfile)
     writer.writerows(fintable)
 """
-print(len(smoothtrials),len(calctable))
+print(fintable)
