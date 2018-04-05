@@ -117,8 +117,8 @@ def finish(itr,table):
     endlist=[ROWLABELS[itr]]
     i=0
     while i < len(table):
-        endlist.append(mean(table[itr][i]))
-        i += 1
+        endlist.append(mean([table[i][iter],table[i+1][iter]]))
+        i += 2
     return(endlist)
 ##creates smoothed data sets
 
