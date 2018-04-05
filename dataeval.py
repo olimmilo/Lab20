@@ -152,10 +152,10 @@ while i < len(smoothtrials):
 i=0
 
     
-fintable=[]
+fintable=[COLLUMNLABELS]
 
 i=0
-while i < len(calctable[0]):
+while i < 4:
     fintable.append(finish(i,calctable))
     i += 1
 i=0
