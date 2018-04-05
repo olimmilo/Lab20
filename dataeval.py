@@ -161,7 +161,7 @@ with open('output.csv','w') as printfile:
     writer = csv.writer(printfile)
     writer.writerows(fintable)
 
-with open('output.csv','w') as printfile2:
+with open('out2.csv','w') as printfile2:
     writer = csv.writer(printfile2)
     writer.writerows(calctable)
 
