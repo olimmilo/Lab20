@@ -113,13 +113,8 @@ def calculations(list,iteration):
     return(calcs)
 
 
-def finish(itr,table):
-    itreal=itr/2
-    endlist=[ROWLABELS[itreal]]
-    i=0
-    while i < len(table):
-        endlist.append(mean([table[i][itreal],table[i+1][itreal]]))
-        i += 2
+def finish(m,table):
+    
     return(endlist)
 ##creates smoothed data sets
 
@@ -151,7 +146,7 @@ i=0
 fintable=[]
 
 i=0
-while i < len(calctable):
+while i < len(calctable)/2:
     fintable.append(finish(i,calctable))
     i += 1
 i=0
